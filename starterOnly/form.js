@@ -74,7 +74,7 @@ function validateInput() {
 
   /** ​‌‍‍‍‍⁡⁢⁣⁣‍‍𝙎𝙞 𝙢𝙖 𝙫𝙖𝙧𝙞𝙖𝙗𝙡𝙚 𝙁𝙞𝙧𝙨𝙩𝙉𝙖𝙢𝙚𝙍𝙚𝙜𝙚𝙭 𝙚𝙩 𝙚𝙜𝙖𝙡𝙚 𝙖 𝙛𝙖𝙪𝙭 𝙖𝙡𝙤𝙧𝙨 𝙧𝙚𝙩𝙪𝙧𝙣 𝙛𝙖𝙡𝙨𝙚 𝙚𝙩 𝙖𝙛𝙛𝙞𝙘𝙝𝙚 𝙚𝙧𝙧𝙚𝙪𝙧​​⁡ **/
 
-  if (FirstNameRegex === false) {
+  if (FirstNameRegex === false || FirstNameRegex === undefined) {
     firstNameInput.parentNode.setAttribute("data-error-visible", true);
     firstNameInput.parentNode.setAttribute(
       "data-error",
@@ -86,7 +86,7 @@ function validateInput() {
 
   /** ⁡⁢⁣⁣​‌‍‍𝙨𝙞 𝙢𝙖 𝙫𝙖𝙧𝙞𝙖𝙗𝙡𝙚 𝙇𝙖𝙨𝙩𝙉𝙖𝙢𝙚𝙍𝙚𝙜𝙚𝙭 𝙚𝙩 𝙚𝙜𝙖𝙡𝙚 𝙖 𝙛𝙖𝙪𝙭 𝙖𝙡𝙤𝙧𝙨 𝙧𝙚𝙩𝙪𝙧𝙣 𝙛𝙖𝙡𝙨𝙚 𝙚𝙩 𝙖𝙛𝙛𝙞𝙘𝙝𝙚 𝙚𝙧𝙧𝙚𝙪𝙧​⁡ **/
 
-  if (lastNameRegex === false) {
+  if (lastNameRegex === false || lastNameRegex === undefined) {
     lastNameInput.parentNode.setAttribute("data-error-visible", true);
     lastNameInput.parentNode.setAttribute("data-error", errorMessages.lastName);
     return false;
@@ -95,7 +95,7 @@ function validateInput() {
 
   /** ⁡⁢⁣⁣​‌‍‍𝙨𝙞 𝙢𝙖 𝙫𝙖𝙧𝙞𝙖𝙗𝙡𝙚 𝙚𝙢𝙖𝙞𝙡𝙍𝙚𝙜𝙚𝙭 𝙚𝙩 𝙚𝙜𝙖𝙡𝙚 𝙖 𝙛𝙖𝙪𝙭 𝙖𝙡𝙤𝙧𝙨 𝙧𝙚𝙩𝙪𝙧𝙣 𝙛𝙖𝙡𝙨𝙚 𝙚𝙩 𝙖𝙛𝙛𝙞𝙘𝙝𝙚 𝙚𝙧𝙧𝙚𝙪𝙧​⁡ **/
 
-  if (emailRegex === false) {
+  if (emailRegex === false || emailRegex === undefined ) {
     emailInput.parentNode.setAttribute("data-error-visible", true);
     emailInput.parentNode.setAttribute("data-error", errorMessages.email);
     return false;
