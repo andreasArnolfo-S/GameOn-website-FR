@@ -6,8 +6,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   .main-navbar {
+    white-space:nowrap;
     @include a.tablette-only {
       height: 100%;
       width: 0;

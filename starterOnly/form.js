@@ -76,10 +76,7 @@ function validateInput() {
 
   if (FirstNameRegex === false || FirstNameRegex === undefined) {
     firstNameInput.parentNode.setAttribute("data-error-visible", true);
-    firstNameInput.parentNode.setAttribute(
-      "data-error",
-      errorMessages.firstName
-    );
+    firstNameInput.parentNode.setAttribute("data-error",errorMessages.firstName);
     return false;
   } else firstNameInput.parentNode.setAttribute("data-valid-visible", true);
   
